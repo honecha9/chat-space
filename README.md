@@ -28,8 +28,7 @@ Things you may want to cover:
 |nickname|string|null: false||
 |e-mail|string|null: false||
 |passward|string|null: false||
-|group_id|integer|null:false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+
 
 ### association
 - has_many :groups thorough: :members
@@ -39,9 +38,7 @@ Things you may want to cover:
 ## groups_table
 |column|Type|opitons|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer||
-|gourp_name|string|null: false|
+|name|string|null: false|
 
 ### association
 - has_many :users thorough: :members
@@ -51,8 +48,8 @@ Things you may want to cover:
 ## members_table
 |column|Type|opitons|
 |------|----|-------|
-|user-id|integer|null: false, foreign_key: true|
-|group-id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### association
 - belong_to :group
@@ -63,8 +60,8 @@ Things you may want to cover:
 |------|----|-------|
 |text|text||
 |image|string||
-|user_id|integer||
-|group_id|iteger||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|iteger|null: false, foreign_key: true|
 
 ### association
 - belong_to :user

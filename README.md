@@ -61,12 +61,12 @@ Things you may want to cover:
 ## message_table
 |column|Type|opitons|
 |------|----|-------|
-|text|text|null: false, foreign_key: true|
+|text|text||
 |image|string||
 |user_id|integer||
 |group_id|iteger||
 
 ### association
-- belon_to :users
-- belong_to :groups
+- belong_to :user
+- belong_to :group
 

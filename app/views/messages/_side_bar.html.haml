@@ -3,10 +3,9 @@
     .side_bar__user-name__box
       .side_bar__user-name__box__items
         .side_bar__user-name__box__items__item-user
-          soooo
+          = current_user.name
         .side_bar__user-name__box__items__item-icon
-
-          =link_to "#", class: "side_bar__user-name__box__items__item-icon__item-btn" do
+          =link_to edit_user_path(current_user), class: "side_bar__user-name__box__items__item-icon__item-btn" do
             = icon('fas', 'cog', class: "side_bar_icon-setting")
           
           =link_to "#" ,class: "side_bar__user-name__box__items__item-icon__item-btn"  do

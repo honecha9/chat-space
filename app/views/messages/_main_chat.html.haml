@@ -1,0 +1,35 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info__group-name
+      test
+      .main_chat__group-info__group-name__member
+        member: soo
+    .main_chat__group-info__edit-menu
+      =link_to "#", class: "main_chat__group-info__edit-menu__icon" do
+        Edit
+  .main_chat__message-list
+    .main_chat__message-list__message
+      .main_chat__message-list__message__user-name
+        .main_chat__message-list__message__user-name__talker
+          sooo
+        .main_chat__message-list__message__user-name__date
+          1993/12/24(Fri) 08:46:54
+      .main_chat__message-list__message__message-text
+        オッパッピー
+
+    .main_chat__message-list__message
+      .main_chat__message-list__message__user-name
+        .main_chat__message-list__message__user-name__talker
+          sooo
+        .main_chat__message-list__message__user-name__date
+          1993/12/24(Fri) 08:46:54
+      .main_chat__message-list__message__message-text
+        オッパッピー
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box_text", placeholder: "type a message"}
+        %label{class: "input-box_image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box_image_file"}
+      %input{type: "submit", class: "submit-btn"}

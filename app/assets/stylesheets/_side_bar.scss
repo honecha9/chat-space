@@ -1,74 +1,61 @@
+$main-color:#fff;
+$deep-blue: #253141;
 .side_bar {
   height: 100vh;
   width: 300px;
-  background-color: #253141;
+  background-color: $deep-blue;
   float: left;
-  .side_bar__user-name{
+  &__user-name{
     height: 100px;
     width: 300px;
-    background-color: #253141;
+    background-color: $deep-blue;
     display: flex;
     align-items: center;
-    .side_bar__box{
+    &__box{
       height: 20px;
       width: 260px;
       margin: 0 auto;
-      .side_bar__items{
+      &__items{
         display: flex;
         justify-content: space-between;
-        .side_bar__item-user{
+        &__item-user{
           line-height: 20px;
-          color: #fff;
+          color: $main-color;
           font-size: 16px;
         }
-        .side_bar__item-icon{
+        &__item-icon{
           height: 20px;
           width: 60px;
-          .side_bar__item-btn{
+          &__item-btn{
             display: block;
             float: right;
             margin-left: 5px;
            line-height: 20px;
             text-decoration: none;
-            color: #fff;
+            color: $main-color;
           }
         }
       }
     }
   }
-  .side_bar__group-list{
+  &__group-list{
     height: calc(100vh - 100px);
     width: 300px;
     background-color: #2f3e51;
-    .group-list__group{
+    &__group{
       margin: 0 20px ;
-      .group__group-name{
-        color: #fff;
+      &__group-name{
+        color: $main-color;
         padding-top: 20px;
         margin-bottom: 5px;
         font-size: 15px;
       }
-      .group__group-message{
+      &__group-message{
         font-size: 11px;
         padding-top: 5px;
         padding-bottom: 40px;
-        color: #fff;
+        color: $main-color;
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

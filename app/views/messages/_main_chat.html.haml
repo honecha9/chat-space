@@ -1,28 +1,29 @@
 .main_chat
   .main_chat__group-info
-    .group-info__group-name
+    .main_chat__group-info__group-name
       test
-      .group-info__member
+      .main_chat__group-info__group-name__member
         member: soo
-    %p.group-info__edit-menu
-      %a.edit-menu__icon{href: "#" } Edit
+    .main_chat__group-info__edit-menu
+      =link_to "#", class: "main_chat__group-info__edit-menu__icon" do
+        Edit
   .main_chat__message-list
-    .message-list__message
-      .message__user-name
-        .user-name__talker
+    .main_chat__message-list__message
+      .main_chat__message-list__message__user-name
+        .main_chat__message-list__message__user-name__talker
           sooo
-        .user-name__date
+        .main_chat__message-list__message__user-name__date
           1993/12/24(Fri) 08:46:54
-      .message__message-text
+      .main_chat__message-list__message__message-text
         オッパッピー
-    
-    .message-list__message
-      .message__user-name
-        .user-name__talker
+
+    .main_chat__message-list__message
+      .main_chat__message-list__message__user-name
+        .main_chat__message-list__message__user-name__talker
           sooo
-        .user-name__date
+        .main_chat__message-list__message__user-name__date
           1993/12/24(Fri) 08:46:54
-      .message__message-text
+      .main_chat__message-list__message__message-text
         オッパッピー
   .form
     %form.new_message

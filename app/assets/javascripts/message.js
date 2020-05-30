@@ -1,8 +1,5 @@
 $(function(){
-  
-  
   function buildHTML(message){
-   
     if (message.image) {
     
       var html =`
@@ -48,7 +45,6 @@ $(function(){
     return html;
     };    
   }
-  
     $("#new_message").on('submit', function(e){
       e.preventDefault();
      

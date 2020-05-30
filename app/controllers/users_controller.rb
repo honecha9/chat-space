@@ -1,9 +1,12 @@
 class UsersController < ApplicationController
   
   def index
-    
+    # 今回使うのはindexなのでここに記入
+    # 
     return nil if params[:keyword] == ""
+    # keywordが""つまりからなのでnilを返すようにしている"
     @users = User.where(['name Like ?', "%#{params[:keyword]}%"] ).where.not(id: current_user.id).limit(10)
+    # name likeで似たようなものparams:keywordのものをdbからとってくる、where not ログイン中のユーザーは除外する、１０文字までかける
     respond_to do |format|
       format.html
       format.json

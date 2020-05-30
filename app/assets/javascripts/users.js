@@ -7,6 +7,7 @@ $(function(){
             </div>
     `;
     $("#user-search-result").append(html);
+        // 検索結果で表示されたユーザーを表示する
   }
 
   function addNoUser() {
@@ -16,6 +17,8 @@ $(function(){
               </div>
     `;
     $("#user-search-result").append(html);
+    // jsonで帰ってきたデータをhtmlにどうやって表示するかを指定してあげる
+    
   }
   function addDeleteUser(name, id) {
     let html = `
@@ -24,10 +27,12 @@ $(function(){
       <div class="user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn" data-user-id="${id}" data-user-name="${name}">削除</div>
     </div>`;
     $(".js-add-user").append(html);
+
   }
   function addMember(userId) {
     let html = `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
     $(`#${userId}`).append(html);
+      
   }
 
   

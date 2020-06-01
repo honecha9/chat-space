@@ -41,7 +41,6 @@ group :development, :test do
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'haml-rails'
   gem 'font-awesome-sass'
-  gem 'devise'
   gem 'pry-rails'
   gem 'carrierwave'
   gem 'mini_magick'
@@ -51,6 +50,7 @@ group :development, :test do
   gem 'faker'
 
 end
+  gem 'devise'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

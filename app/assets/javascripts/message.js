@@ -32,7 +32,7 @@ $(function(){
                     ${message.user_name}
                   </div>
                   <div class="main_chat__message-list__message__user-name__date">
-                    ${message.created_at.strftime}
+                    ${message.created_at}
                   </div>
               </div>
               <div class="main_chat__message-list__message__message-text">

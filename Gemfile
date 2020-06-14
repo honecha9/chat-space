@@ -73,5 +73,5 @@ gem 'jquery-rails'
 group :production do
   gem 'unicorn', '5.4.1'
 end
-
+gem 'rails_12factor', group: :production
 gem 'fog-aws'
